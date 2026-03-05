@@ -15,7 +15,15 @@ public abstract class Animal {
     private LocalDate fechaNacimiento;
     private char sexo;
     private double peso;
-
+/**
+* Constructor de la clase Animal.
+     * @param codigo Identificador de 5 caracteres (dígitos 0-9 o letras a-z).
+     * @param fechaNacimiento Fecha en formato ISO-8601 (yyyy-MM-dd).
+     * @param sexo Género del animal: 'H' (Macho) o 'M' (Hembra).
+     * @param peso Peso en kilogramos (debe ser un valor positivo > 0).
+     * @throws IllegalArgumentException Si los parámetros no cumplen las reglas de negocio.
+ 
+ */
     public Animal(String codigo, String fechaNacimiento, char sexo, double peso) {
 
         LocalDate fecha;
