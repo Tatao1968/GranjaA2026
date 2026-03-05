@@ -137,7 +137,12 @@ public abstract class Animal {
     public String toString() {
         return "Animal{" + "codigo=" + codigo + ", fechaNacimiento=" + fechaNacimiento + ", sexo=" + sexo + ", peso=" + peso + '}';
     }
+/**
+ * Emite el sonido característico de la especie.
+     * @return Cadena con la onomatopeya (ej. "Guau", "Miau").
+     */
 
+ 
     public abstract String hacerSonido();
 
     public abstract String alegrarse();
